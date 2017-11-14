@@ -1,11 +1,15 @@
 <?php
+	echo "1";
 	ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
 
 	$xml_doc_path = "index.xsl";
+	echo "2";
 	require 'headerXML.php';
+	echo "3";
 	require 'connToMySQL.php';
+	echo "4";
 	$MySQLObj = new MySQL_Handler();
 	$MySQLObj->mysql_connect();
 
@@ -35,7 +39,10 @@
 		$css_blog_title = $article->addChild('css_blog_title', 'blog_article_'.$dict["blogpost_id"]."_title");
 		$css_blog_intro = $article->addChild('css_blog_intro', 'blog_article_'.$dict["blogpost_id"]."_intro");
 	}
-	$useXML = 0;
+	$useXML = 1;
+	echo "5";
 	require 'error.php';
+	echo "6";
 	require 'footerXML.php';
+	echo "7";
 ?>
