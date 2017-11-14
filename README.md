@@ -1,4 +1,4 @@
-# A student blog - My first website
+# A Student Blog - My first website
 
 **From this project I learnt vastly in the layers of web development as well as PHP and usage of templating languages.**
 
