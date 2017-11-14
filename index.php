@@ -2,7 +2,7 @@
 	ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
-	
+
 	$xml_doc_path = "index.xsl";
 	require 'headerXML.php';
 	require 'connToMySQL.php';
@@ -35,7 +35,7 @@
 		$css_blog_title = $article->addChild('css_blog_title', 'blog_article_'.$dict["blogpost_id"]."_title");
 		$css_blog_intro = $article->addChild('css_blog_intro', 'blog_article_'.$dict["blogpost_id"]."_intro");
 	}
-	$useXML = 1;
+	$useXML = 0;
 	require 'error.php';
 	require 'footerXML.php';
 ?>
