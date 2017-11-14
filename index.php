@@ -1,4 +1,8 @@
 <?php
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+	
 	$xml_doc_path = "index.xsl";
 	require 'headerXML.php';
 	require 'connToMySQL.php';
@@ -16,7 +20,7 @@
 
 
 	$articles = $xml->addChild('articles');
-	for ($i=0; $i < $count; $i++) { 
+	for ($i=0; $i < $count; $i++) {
 
 		$dict = $result->fetch_assoc();
 		$article = $articles->addChild('article');
