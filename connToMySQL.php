@@ -6,7 +6,7 @@ class MySQL_Handler {
 		$this->conn = NULL;
 	}
 
-	function mysql_connect($print_status = true) {
+	function mysql_connect($print_status = false) {
 
 		// $hostname = "localhost"; // Oddly enough does not work
 
